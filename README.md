@@ -2,7 +2,7 @@
 Herexamen Software Security: Opdracht Security Vereisten
 # Data Flow Diagram
 
-***Data FLow Diagram still in progress***
+![DataflowDiagram](https://user-images.githubusercontent.com/64362709/183143926-2d57c41d-bb78-49bf-a97a-3b9b094365c9.jpg)
 
 # Toegangsregels
 
