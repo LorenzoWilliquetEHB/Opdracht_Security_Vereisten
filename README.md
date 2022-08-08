@@ -2,7 +2,7 @@
 Herexamen Software Security: Opdracht Security Vereisten
 # Data Flow Diagram
 
-![DataflowDiagram](https://user-images.githubusercontent.com/64362709/183143926-2d57c41d-bb78-49bf-a97a-3b9b094365c9.jpg)
+![DataflowDiagram](https://user-images.githubusercontent.com/64362709/183461245-e1963d3b-fbd5-4fb4-b3c7-00b27ca80931.jpg)
 
 # Toegangsregels
 
