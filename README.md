@@ -43,7 +43,16 @@ Herexamen Software Security: Opdracht Security Vereisten
 Enkele zaken die mogelijk zijn binnen het RFID System: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege, Insiders en Bot attacks.
 
 # Classificatie security risico's
-Still in progress !!!
+| Threat  | Risk level |
+| ------------- | ------------- |
+| Spoofing  | Medium |
+| Tampering  | High |
+| Repudiation  | Low |
+| Information disclosure  | High |
+| Denial of Service  | High |
+| Elevation of privilege  | Medium |
+| Insiders  | Low |
+| Bot attacks  | High |
 
 # Aanbevelingen
 Ik zou aanraden voor de webapp en api te hosten via Azure en gebruikmaken van de db in Azure. Waarom Azure? Zij bieden een tal van functionaliteiten om je web toepassing goed te beveiligen en goed te onderhouden.
