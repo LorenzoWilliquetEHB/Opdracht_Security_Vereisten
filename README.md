@@ -103,7 +103,7 @@ Probleem: Door dit kan het zijn dat een geautoriseerde of niet geautoriseerde ge
 ### Waar?
 Webapp
 ### Oplossing?
-Rollen gaan toekennen aan bepaalde acties die een gebruiker mag uitvoeren. Azure AD Multi-Factor Authentication dit zorgt ervoor dat je meerdere verificatiemethoden kan gebruiken om te gaan inloggen in de webapp. Waardoor de ingelogde gebruikers hun rol gaan hebben (admin, cashier, loaner of registration).
+Rollen gaan toekennen aan bepaalde acties die een gebruiker mag uitvoeren. Azure AD Multi-Factor Authentication dit zorgt ervoor dat je meerdere verificatiemethoden kan gebruiken om te gaan inloggen in de webapp. Waardoor de ingelogde gebruikers hun rol gaan hebben (admin, cashier, loaner of registration) door roles te gaan koppelen binnenin Azure AD.
 
 ## Insiders
 ### Probleem?
