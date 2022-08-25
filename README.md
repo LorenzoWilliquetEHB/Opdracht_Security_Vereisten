@@ -2,7 +2,8 @@
 Herexamen Software Security: Opdracht Security Vereisten
 # Data Flow Diagram
 
-![DataflowDiagram](https://user-images.githubusercontent.com/64362709/183461245-e1963d3b-fbd5-4fb4-b3c7-00b27ca80931.jpg)
+![DataflowDiagram (1)](https://user-images.githubusercontent.com/64362709/186705787-ed838540-48ed-441c-a545-43d4ff07d6f6.jpg)
+
 
 # Toegangsregels
 
@@ -31,13 +32,6 @@ Herexamen Software Security: Opdracht Security Vereisten
 - Als loaner kan ik items gaan uitlenen.
 - Als loaner kan ik items gaan retourneren.
 - Als loaner kan ik zien wat er uitgeleend is en aan wie het uitgeleend is en wanneer het uitgeleend is.
-
-## Registration
-
-- Als registration kan ik inloggen.
-- Als registration kan ik uitloggen.
-- Als registration kan ik het saldo van gebruikers updaten.
-- Als registration kan ik een nieuwe gebruiker gaan registreren.
 
 # Stride Analyse
 Enkele zaken die mogelijk zijn binnen het RFID System: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege, Insiders en Bot attacks.
@@ -103,7 +97,7 @@ Probleem: Door dit kan het zijn dat een geautoriseerde of niet geautoriseerde ge
 ### Waar?
 Webapp
 ### Oplossing?
-Rollen gaan toekennen aan bepaalde acties die een gebruiker mag uitvoeren. Azure AD Multi-Factor Authentication dit zorgt ervoor dat je meerdere verificatiemethoden kan gebruiken om te gaan inloggen in de webapp. Waardoor de ingelogde gebruikers hun rol gaan hebben (admin, cashier, loaner of registration) door roles te gaan koppelen binnenin Azure AD.
+Rollen gaan toekennen aan bepaalde acties die een gebruiker mag uitvoeren. Azure AD Multi-Factor Authentication dit zorgt ervoor dat je meerdere verificatiemethoden kan gebruiken om te gaan inloggen in de webapp. Waardoor de ingelogde gebruikers hun rol gaan hebben (admin, cashier, loaner) door roles te gaan koppelen binnenin Azure AD.
 
 ## Insiders
 ### Probleem?
@@ -111,7 +105,7 @@ Huidige werknemer of voormalige werknemer die toegang heeft tot de gevoelige dat
 ### Waar?
 Webapp, API en DB
 ### Oplossing?
-Gebruikmaken van Microsoft Purview Insider Risk Management. Helpt om interne risico’s te minimaliseren door u in staat te stellen van kwaadaardige en opzettelijke activiteiten in uw organisatie op te sporen, te onderzoeken en erop te reageren.
+Gebruikmaken van Microsoft Purview Insider Risk Management. Helpt om interne risico’s te minimaliseren door u in staat te stellen van kwaadaardige en opzettelijke activiteiten in uw organisatie op te sporen, te onderzoeken en erop te reageren. Zorg voor een Root User die het systeem opstart en eventuele andere admin zaken kan gaan uitvoeren.
 
 ## Bot attacks
 ### Probleem?
