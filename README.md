@@ -34,19 +34,42 @@ Herexamen Software Security: Opdracht Security Vereisten
 - Als loaner kan ik zien wat er uitgeleend is en aan wie het uitgeleend is en wanneer het uitgeleend is.
 
 # Stride Analyse
-Enkele zaken die mogelijk zijn binnen het RFID System: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege, Insiders en Bot attacks.
+
+## Spoofing
+Het kan zijn dat een persoon of programma zich vooordoet als iemand anders. Brute force attacks. Deze aanval zou binnen de webapplicatie gebeuren. Het gevolg hiervan is dat de aanvaller gaat lopen met iemand zijn credentials. Deze aanval moet aangepakt worden.
+
+## Tampering
+Hierbij kunnen er eventuele SQL injections uitgevoerd worden en Cross-Site scripting. Deze aanvallen bevinden zich in webapplicatie, API en DB. Het gevolg hiervan is dat aanvallers de mogelijkheid hebben om: Het lezen van alle gegevens en uitvoeren van willekeurige acties door zich voor te doen als de gebruiker. 
+
+## Repudiation
+Een actie wordt uitgevoerd door een aanvaller en ontkent dat hij deze heeft uitgevoerd. Deze aanval bevindt zich in webapplicatie, API en DB. Het gevolg hiervan is dat er actie is uitgevoerd zonder dat men weet wie het gedaan heeft.
+
+## Information Disclosure
+Gevoelige data die wordt blootgelegd zonder dat men die rechten heeft om die te bekijken of aan te passen. Deze aanval gebeurt in de webapplicatie, API en DB. Het gevolg ervan is als men geen rollen toekent er gevoelige data wordt blootgelegd en er acties worden uitgevoerd zonder dat men dit wil.
+
+## Denial of Service
+De webapplicatie wordt overspoelt met verkeer. De aanval wordt uitgevoerd binnen de webapplicatie, API en DB. Het gevolg hiervan is dat de webapplicatie crasht en niet meer gaat werken.
+
+## Elevation of Privilege
+Geautoriseerde en niet geautoriseerde gebruikers krijgen toegang tot informatie die ze niet mogen zien. De aanval heeft betrekking tot de webapplicatie. Het gevolg hiervan is dat gevoelige data wordt blootgelegd aan gebruikers die het recht niet hebben om die te zien.
+
+## Insiders
+Het kan zijn dat binnen de organisatie iemand recht heeft om gevoelige data te bekijken en of aan te passen. Met die acties die hij kan gebruiken maakt hij er misbruik van. De aanval heeft betrekking tot de webapplicatie, API en DB. Het gevolg hiervan is dat gevoelige data en acties misbruikt worden door een persoon waardoor dit invloed heeft op het systeem.
+
+## Bot attacks
+Het gebruik van geautomatiseerde web requests om een website, applicatie, API of eindgebruikers te manipuleren, te bedriegen of te verstoren. De aanval bevindt zich in de webapplicatie en API. Het gevolg hiervan is dat het systeem gemanipuleert wordt door die requests en zo niet optimaal functioneert.
 
 # Classificatie security risico's
-| Threat  | Risk level |
-| ------------- | ------------- |
-| Spoofing  | Medium |
-| Tampering  | High |
-| Repudiation  | Low |
-| Information disclosure  | High |
-| Denial of Service  | High |
-| Elevation of privilege  | Medium |
-| Insiders  | Low |
-| Bot attacks  | High |
+| Threat  | Risk level | Risk option |
+| ------------- | ------------- | ------------- |
+| Spoofing  | Medium | Aanpakken |
+| Tampering  | High | Aanpakken |
+| Repudiation  | Low | Aanvaarden |
+| Information disclosure  | High | Aanpakken |
+| Denial of Service  | High | Aanpakken |
+| Elevation of privilege  | Medium | Aanpakken |
+| Insiders  | Low | Aanvaarden |
+| Bot attacks  | High | Aanpakken |
 
 # Aanbevelingen
 Ik zou aanraden voor de webapp en api te hosten via Azure en gebruikmaken van de db in Azure. Waarom Azure? Zij bieden een tal van functionaliteiten om je web toepassing goed te beveiligen en goed te onderhouden.
