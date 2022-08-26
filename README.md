@@ -71,8 +71,42 @@ Het gebruik van geautomatiseerde web requests om een website, applicatie, API of
 | Insiders  | Low | Aanvaarden |
 | Bot attacks  | High | Aanpakken |
 
+## Risico's die niet aangepakt zijn
+
+### Spoofing: Brute force attacks
+Men kan in het bestaand systeem meerdere malen proberen inloggen/registreren.
+
+### Tampering: SQL injections, Cross-Site scripting
+Tijdens het evalueren van het systeem heeft de tool Snyk 2 meldingen teruggegeven in verband met Cross-Site scripting.
+
+### Information Disclosure: Blootleggen van informatie
+Hardcoded credentials zijn aanwezig in de toepassing, POST, PUT en DELETE requests worden niet geëncrypteerd.
+
+### Denial of Service: website overspoelen met verkeer waardoor de website niet meer werkt
+Tijdens het evalueren van het systeem heeft de tool SonarQube een melding teruggegeven in verband met een DoS attack dat eventueel kan plaatsvinden bij een regex die gebruikt wordt.
+
+### Bot attacks: geautomatiseerd requests die het systeem manipuleert, bedriegt en verstoord
+Activiteiten die gebeuren op de website waarbij de gebruiker eventueel verstoord wordt bij de actie. Geautomatiseerde request die verstuurd worden naar de api.
+
 # Aanbevelingen
 Ik zou aanraden voor de webapp en api te hosten via Azure en gebruikmaken van de db in Azure. Waarom Azure? Zij bieden een tal van functionaliteiten om je web toepassing goed te beveiligen en goed te onderhouden.
+
+## Toegangsregels
+
+### Admin
+- Bij het inloggen/registeren gerbuikmaken van de Azure AD Multi-Factor Authentication.
+- CRUD resquests naar de api encrypteren.
+- Gevoelige gegevens in uw html velden encoded. 
+
+### Cashier
+- Bij het inloggen/registeren gerbuikmaken van de Azure AD Multi-Factor Authentication.
+- CRUD resquests naar de api encrypteren.
+- Gevoelige gegevens in uw html velden encoded.
+
+### Loaner
+- Bij het inloggen/registeren gerbuikmaken van de Azure AD Multi-Factor Authentication.
+- CRUD resquests naar de api encrypteren.
+- Gevoelige gegevens in uw html velden encoded.
 
 ## Spoofing
 ### Probleem?
@@ -136,4 +170,4 @@ Gebruik van geautomatiseerde web requests om een website, applicatie, API of ein
 ### Waar?
 Webapp en API
 ### Oplossing?
-Azure Web Application Firewall service die een bescherming aanbiedt tegen webhackingtechnieken, zoals SQL injection en beveiligingsproblemen als site-overschrijdende scripts.
+Azure Web Application Firewall service die een bescherming aanbiedt tegen webhackingtechnieken, zoals SQL injection en beveiligingsproblemen als site-overschrijdende scripts. Captcha voorzien bij het inloggen of bij het aankopen van iets.
